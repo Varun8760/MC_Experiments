@@ -18,12 +18,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Tax Hooks
+      
         etSalary = findViewById(R.id.etSalary);
         tvTaxResult = findViewById(R.id.tvTaxResult);
         findViewById(R.id.btnTax).setOnClickListener(v -> calculateTax());
 
-        // EMI Hooks
+   
         etLoanAmount = findViewById(R.id.etLoanAmount);
         etInterest = findViewById(R.id.etInterest);
         etTenure = findViewById(R.id.etTenure);
@@ -41,7 +41,6 @@ public class MainActivity extends AppCompatActivity {
         double income = Double.parseDouble(input);
         double tax = 0;
 
-        // Accurate Slab Logic
         if (income <= 300000) {
             tax = 0;
         } else if (income <= 600000) {
