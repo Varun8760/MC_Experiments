@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         double p = Double.parseDouble(etLoanAmount.getText().toString());
-        double r = Double.parseDouble(etInterest.getText().toString()) / (12 * 100); // Monthly interest
+        double r = Double.parseDouble(etInterest.getText().toString()) / (12 * 100); 
         double n = Double.parseDouble(etTenure.getText().toString());
 
         double emi = (p * r * Math.pow(1 + r, n)) / (Math.pow(1 + r, n) - 1);
